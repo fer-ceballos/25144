@@ -1,0 +1,215 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    }
+    /*aca comienza el body*/
+body{
+    margin: 0;
+    background-color:blanchedalmond;
+    
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+    "header header header header"
+    "main2 main2 main2 main2"
+    "main2 main2 main2 main2"
+    "fo fo fo fo"
+}
+
+@media(min-width:300px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-areas: 
+        "header header "
+        "main2 main2 "
+        "main2 main2 "
+        "fo fo";
+    }
+    body{ background-color: yellow;
+        font-family: 'Times New Roman', Times, serif;    
+    }
+    
+
+}
+@media(min-width:500px){
+    .contenedor{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+        "header header header"
+        "main2  main2 main2"
+        "main2  main2 main2"
+        "fo fo fo fo";
+    }
+    body{ background-color:blanchedalmond;
+        font-family: 'Times New Roman', Times, serif;    
+    }
+
+}
+
+@media(min-width:880px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr 1f;
+        grid-template-areas:
+        "header header header header "
+        "main2 main2 main2 main2"
+        "main2 main2 main2 main2"
+        "fo fo fo fo fo";
+    }
+    body{ background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;    
+    }
+}
+
+
+header{
+    grid-area: header;
+    
+    }
+
+.titu{
+    grid-area: titu;
+}
+    
+
+    
+
+.nav{
+    grid-area: nav;
+   
+}
+
+.main2{
+    grid-area: main2;
+    background-color: blanchedalmond;
+}
+.fo{
+    grid-area: fo;
+}
+
+.redes1{
+    left: 400px;
+}
+
+
+
+.logo{
+    margin:0;
+    position: relative;
+    left: 10px;
+    padding: 10px;
+}
+.titu{
+    font-size: 20px;
+    margin:20px;
+    color: dimgrey;
+}
+
+ul.menu{
+    list-style: none;
+    padding:0%;
+    margin: 0%;
+}
+.menu li{
+    display:inline-block;
+}
+.menu li a{
+    padding: 10px 20px;
+    display: inline-block;
+    color: black;
+}
+.menu li a:hover {
+    background-color:white;
+}      
+/*aca empieza el main*/
+main.somos{
+    background-color:blanchedalmond;
+}
+main.servicios{
+    background-color: blanchedalmond;
+    }
+.corte{
+    width: 300px;
+    height: 300px;
+}    
+.subtitulo{
+    font-size: 20px;
+}
+main.produ{
+    background-color: blanchedalmond;
+}
+.productos{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 10px;
+}
+
+main{
+    background-color: white;
+    margin: 6rem;
+   }
+main section :hover{ 
+    box-shadow:0  0.1rem 0.4rem rgb(0,0,0,0.8);
+}
+main.contactos{
+    background-image:url("imagen/peinado3.jpg");
+    background-size: cover;
+}
+/*aca comienza el footer*/
+footer{
+    background-color: blanchedalmond;
+    padding: 1em;
+    bottom: 0;
+    margin-top: auto;
+
+}
+footer h3{background-image:url("imagen/corte.jpg") ;
+    background-size: contain;
+    height: 10 px;
+    width: 230px;
+    background-repeat: repeat-x;
+    color:white;
+    position: relative;
+    left: 10px;
+    border-style:solid;
+    border-color: black;
+    border-radius: 8px;
+}
+
+.listas li a{
+    color: black;
+}
+ul.listas{
+    display: flex;
+    flex-direction: row ;
+    width: 350px;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content:space-around;
+   
+}
+.listas li a:hover {
+    background-color:white;
+}      
+
+
+.redes{
+    position:relative;
+    left: 300px;
+}
+div.mapa{
+    width: 5px;
+    height: 5px;
+    position: relative;
+    left: 200px;
+}
+div.mapa:hover{
+    box-shadow: 0  0.1rem 0.4rem rgb(0,0,0,0.8);
+    
+
+}
+
+
